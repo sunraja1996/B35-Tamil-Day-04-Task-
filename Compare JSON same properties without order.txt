@@ -1,0 +1,10 @@
+var obj1 = {
+    name:"Person1", 
+    age:5
+};
+var obj2 = {
+    age:5, 
+    name:"Person1"
+};
+
+console.log(Object.keys(obj1) !== Object.keys(obj2)); //true
