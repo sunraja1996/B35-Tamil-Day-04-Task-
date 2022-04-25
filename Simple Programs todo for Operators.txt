@@ -1,0 +1,214 @@
+//Task 2: Simple Programs todo for Operators
+
+//1.Square of a number
+//Ans : 
+function square(number) {
+    return number ** 2;
+  }
+  console.log(square(6));  // 36
+
+//2.Swapping 2 numbers
+//Ans :   
+        let a = 10;
+        let b = 20;
+        [a, b] = [b, a]; 
+        console.log(a, b);  // 20, 10
+
+//3.Addition of 3 numbers
+//Ans : 
+function sum_three(nums)
+  {
+    return nums[0] + nums[1] + nums[2];
+  }
+  
+  console.log(sum_three([2, 32, 10]));  // 44
+
+
+//4.Celsius to Fahrenheit conversion
+//Ans :
+
+function cToF(celsius) 
+{
+  var celTemp = celsius;
+  var celToFahr = celTemp * 9 / 5 + 32;
+  var message = celTemp+'C is ' + celToFahr + 'F.';
+    console.log(message);
+}
+
+cToF(75); 75C is 167F.
+
+
+//5.Meter to miles
+//Ans :
+function mtomi(meter) 
+{
+  var meterlength = meter;
+  var metertomiles = meterlength * 0.00062137;
+  var MetertoMiles = meterlength+'m is ' + metertomiles + 'mi.';
+    console.log(MetertoMiles);
+}
+mtomi(25);  //25m is 0.01553425mi.
+
+
+//6.Pounds to kg
+//Ans :
+function lbtokg(pounds){
+    var poundsinlb = pounds;
+    var poundstokilogramfor = poundsinlb / 200246;
+    var PoundstoKilogram = poundsinlb + 'lb is ' + poundstokilogramfor + 'kg';
+    console.log(PoundstoKilogram);
+}
+lbtokg(560);   //560lb is 0.0027965602309159734kg
+
+
+//7.Calculate Batting Average
+//Ans :
+function battingavg(runs, matches, notout){
+    let out = matches - notout;
+    var batting = runs / out;
+    var Batting_Average = batting;
+    console.log(Batting_Average);
+}
+battingavg(1300, 50, 35); //86.66666666666667
+
+//8.Calculate five test scores and print their average
+//Ans :
+var sum = [250,165,485,174,150];
+for (var i = 0, total = 0; i < sum.length; total += sum[i++]);
+var Average = total / sum.length;
+
+console.log(Average);
+
+//9.Power of any number x ^ y.
+//Ans :
+var x = 2;
+var y = 3;
+function power(){
+    return x ** y;
+  }
+console.log(power());
+
+//10.Calculate Simple Interest
+//Ans:
+var principle = 15;
+var time = 12;
+var rate = 12;
+
+let Simple_Interest = (principle * time * rate) / 100;
+
+console.log(Simple_Interest);
+
+
+//11.Calculate area of an equilateral triangle
+//Ans :
+var sides = 25;
+function power(){
+    var sqofsides = sides ** 2;
+    var area = 0.43301 * sqofsides;
+    console.log(area);
+  }
+
+//12.Area Of Isosceles Triangle
+//Ans:
+  var base = 5;
+  var height = 10;
+
+  let areaiso = 0.5 * base * height;
+  console.log(areaiso);
+
+//13.Volume Of Sphere
+//Ans:
+var radius = 6;
+var pi_value = 3.14;
+var cubeofradius = (radius ** 3);
+console.log((4/3)*pi_value*cubeofradius);
+
+//14.Volume Of Prism
+//Ans :
+// rectangular prism
+var base = 15;
+var length = 10;
+var prismheight = 30;
+let volumeofrectprism = base*length*prismheight
+
+console.log(volumeofrectprism);
+
+//triangular prism
+var base = 5;
+var height = 10;
+var prismlength = 30;
+let areaoftriprism = 0.5 * (base*height);
+let volumeoftriprism = areaoftriprism * prismlength
+
+console.log(volumeoftriprism);
+
+//cylinder prism
+
+var radius = 6;
+var pi_value = 3.14;
+var prismheight = 20;
+
+let areaofcyl = pi_value * (radius ** 3);
+let volumeofcylprism = areaofcyl * prismheight;
+console.log(volumeofcylprism);
+
+//15.Find area of a triangle.
+//Ans:
+  var base = 5;
+  var height = 10;
+
+  let areaoftri = 0.5 * base * height;
+  console.log(areaoftri);
+
+//16.Give the Actual cost and Sold cost, Calculate Discount Of Product
+//Ans:
+  var actual_cost = 450;
+  var sold_cost = 300;
+  let loss = actual_cost - sold_cost;
+  let discount = (loss / actual_cost) * 100;
+  console.log(discount);
+
+//17.Given their radius of a circle and find its diameter, circumference and area.
+//Ans:
+var radius = 6;
+var pi_value = 3.14;
+
+let diameterofcircle = 2*radius
+let circumferenceofcircle = pi_value * diameterofcircle;
+let areaofcircle = pi_value * (radius ** 2);
+
+console.log(diameterofcircle, circumferenceofcircle, areaofcircle);
+
+//18.Given two numbers and perform all arithmetic operations.
+//Ans :
+var x = 5;
+var y = 3;
+
+let add = x + y;
+let sub = x - y;
+let multiply = x * y;
+let divide = x / y;
+let module = x % y;
+let exponentiation = x**y;
+
+console.log(add);
+console.log(sub);
+console.log(multiply);
+console.log(divide);
+console.log(module);
+console.log(exponentiation);
+
+
+//20.Calculate electricity bill?
+For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
+//Ans:
+var wattsperhr = 100;
+var costperunit = 10;
+
+let dailyunit = wattsperhr / 1000;
+let totalamonthunit = 30 * dailyunit;
+var consumer_consumes = totalamonthunit
+let Electricitybill = consumer_consumes * costperunit;
+
+console.log(Electricitybill);
+
